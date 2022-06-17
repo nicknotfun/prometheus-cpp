@@ -15,6 +15,7 @@ cc_library(
     hdrs = glob(
         ["include/**/*.h"],
     ) + [":export_header"],
+    features = ["exceptions"],
     strip_include_prefix = "include",
     visibility = ["//visibility:public"],
 )
